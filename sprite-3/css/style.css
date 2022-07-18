@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box{
+    position: relative;
+    width: 512px;
+    height: 256px;
+    margin: 0 auto;
+    border: black solid 1px;
+    overflow: hidden;
+}
+.images{
+    position: relative;
+    width: 4096;
+    height: 256px;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8);
+    transform: translateX(0);
+}
+#img1{
+    top: 0px;
+    left: 0px;
+}
+#img2{
+    top: -256px;
+    left:2048 ;
+}
+@keyframes animate{
+    100%{
+
+        transform: translateX(-4096px);
+    }
+}
